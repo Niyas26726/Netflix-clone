@@ -1,0 +1,45 @@
+.footer{
+  padding: 50px 15% 10px;
+  border-top: 6px solid #333;
+  color: #777;
+}
+
+.footer h2{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.footer .column{
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.footer .column a{
+  display: block;
+  color: #afafaf;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer .row{
+  align-items: flex-start;
+}
+
+.footer .language-btn{
+  color: white;
+  background-color: rgb(27, 27, 27);
+  font-size: 15px;
+  padding: 5px 25px;
+  border-radius: 3px;
+}
+
+.footer h2{
+  color: rgb(197, 197, 197);
+}
+
+.footer u:hover{
+  cursor: pointer;
+}
