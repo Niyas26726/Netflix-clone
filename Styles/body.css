@@ -1,0 +1,118 @@
+.features{
+  padding: 50px 12%;
+  font-size: 22px;
+}
+
+.features .row{
+  border-bottom: 6px solid #333;
+}
+
+.row{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.text-column,
+.img-column{
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+.img-column img{
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.features h2{
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.faq{
+  padding: 1px 12%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.faq h2{
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.Questions{
+  margin: 60px auto;
+  width: 100%;
+  max-width: 750px;
+}
+.Questions li{
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.Questions li label{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background: #303030;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+label::after{
+  content: '+';
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.25s;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.Questions .content{
+  background: #303030;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s, padding 0.25s;
+}
+
+.Questions input[type="radio"]:checked + label + .content{
+  max-height: 600px;
+  padding: 30px 20px;
+}
+
+.Questions input[type="radio"]:checked + label::after{
+  transform: rotate(135deg);
+}
+
+.faq .email-signup{
+  max-width: 600px;
+  margin: 20px auto 60px;
+  padding-bottom: 0px;
+}
+
+.faq small{
+  font-size: 20px;
+}
+
+.faq .get-started{
+  margin-right: 18px;
+}
+
+.faq .email{
+  margin-left: 10px;
+}
